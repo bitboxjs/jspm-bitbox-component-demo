@@ -4,17 +4,20 @@
 	(global.demoBox = factory(global.bitbox,global.bitbox_elements));
 }(this, function (bitbox,bitbox_elements) { 'use strict';
 
-	/** hello box */
+	/** demo box */
 
-	function hello(props) {
+	function demo(props) {
 		var $tree = [];
-		$tree.push(bitbox_elements.h1({}, function ($tree) {
+		$tree.push(bitbox_elements.h1({
+			margin: 24,
+			color: 'green'
+		}, function ($tree) {
 			$tree.push('Hello World');
 			return $tree;
 		}([])));
 		return $tree.pop();
 	}
 
-	return hello;
+	return demo;
 
 }));
