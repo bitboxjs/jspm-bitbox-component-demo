@@ -1,0 +1,6 @@
+import bitbox from 'bitbox'
+import {h1} from 'bitbox/elements'
+
+<demo(props) export default>
+	<h1 color='green' margin=24 text => Hello World</h1>
+</demo>

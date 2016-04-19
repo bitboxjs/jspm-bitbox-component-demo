@@ -1,0 +1,66 @@
+{
+    "jspm": {
+        "name": "demo",
+        "main": "demo.js",
+        "directories": {
+            "lib": "src"
+        },
+        "dependencies": {
+            "bitbox": "npm:bitbox@^1.0.22",
+            "bitbox-elements": "npm:bitbox-elements@^1.0.2"
+        },
+        "devDependencies": {
+            "assert": "github:jspm/nodelibs-assert@^0.2.0-alpha",
+            "buffer": "github:jspm/nodelibs-buffer@^0.2.0-alpha",
+            "fs": "github:jspm/nodelibs-fs@^0.2.0-alpha",
+            "http": "github:jspm/nodelibs-http@^0.2.0-alpha",
+            "path": "github:jspm/nodelibs-path@^0.2.0-alpha",
+            "plugin-babel": "npm:systemjs-plugin-babel@^0.0.9",
+            "plugin-bitbox": "npm:bitbox-systemjs-plugin@^1.0.1",
+            "process": "github:jspm/nodelibs-process@^0.2.0-alpha",
+            "stream": "github:jspm/nodelibs-stream@^0.2.0-alpha",
+            "url": "github:jspm/nodelibs-url@^0.2.0-alpha",
+            "util": "github:jspm/nodelibs-util@^0.2.0-alpha"
+        },
+        "peerDependencies": {
+            "cerebral": "npm:cerebral@^0.33.32",
+            "child_process": "github:jspm/nodelibs-child_process@^0.2.0-alpha",
+            "constants": "github:jspm/nodelibs-constants@^0.2.0-alpha",
+            "crypto": "github:jspm/nodelibs-crypto@^0.2.0-alpha",
+            "events": "github:jspm/nodelibs-events@^0.2.0-alpha",
+            "os": "github:jspm/nodelibs-os@^0.2.0-alpha",
+            "string_decoder": "github:jspm/nodelibs-string_decoder@^0.2.0-alpha",
+            "vm": "github:jspm/nodelibs-vm@^0.2.0-alpha"
+        },
+        "overrides": {
+            "npm:cerebral-module-signal-store@0.1.8": {
+                "peerDependencies": {
+                    "cerebral": "^0.33.32"
+                }
+            },
+            "npm:esprima@2.7.2": {
+                "jspmNodeConversion": false
+            },
+            "npm:inherits@2.0.1": {
+                "ignore": [
+                    "test.js"
+                ]
+            },
+            "npm:readable-stream@1.0.34": {
+                "map": {
+                    "stream": "stream-browserify/index"
+                },
+                "systemjs": {
+                    "main": "readable.js"
+                },
+                "dependencies": {
+                    "core-util-is": "~1.0.0",
+                    "isarray": "0.0.1",
+                    "string_decoder": "~0.10.0",
+                    "inherits": "~2.0.1",
+                    "stream-browserify": "~1.0.0"
+                }
+            }
+        }
+    }
+}
